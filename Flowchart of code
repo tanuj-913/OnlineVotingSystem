@@ -1,0 +1,15 @@
+Online Voting System
+│-- index.html
+│-- API/
+│   │-- dashboard.php
+│   │-- vote.php
+│   │-- login.php
+│   │-- logout.php
+│   │-- register.php
+│   └-- connect.php
+│-- Routes/
+│   └-- register.html
+│-- CSS/
+│   └-- style.css
+│-- Uploads/
+    └-- Images which you upload
