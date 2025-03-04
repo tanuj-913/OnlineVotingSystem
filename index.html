@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Voting System</title>
+    <link rel="stylesheet" href="CSS/stylesheet.css">
+    <script defer src="JS/animations.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="title">🌐 Online Voting System</h1>
+    </header>
+
+    <div class="container">
+        <div class="card">
+            <h2>Login</h2>
+            <form action="Api/login.php" method="POST">
+                <input type="number" name="mobile" placeholder="📞 Mobile Number" required>
+                <input type="password" name="password" placeholder="🔑 Password" required>
+                <select name="role" required>
+                    <option value="" style="color: #20B2AA; background-color: black;">Select Role</option>
+                    <option value="1" style="color: #20B2AA; background-color: black;">Voter</option>
+                    <option value="2" style="color: #20B2AA; background-color: black;">Group</option>
+                </select>
+                <button type="submit">Login</button>
+                <p>New User? <a href="Routes/register.html">Register Here</a></p>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <p>© 2025 Online Voting System</p>
+    </footer>
+
+    <script src="JS/animations.js"></script>
+</body>
+</html>

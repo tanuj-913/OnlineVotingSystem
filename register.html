@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Voting System - Registration</title>
+    <link rel="stylesheet" href="../CSS/stylesheet.css">
+    <script src="../JS/register.js" defer></script>
+</head>
+
+<body>
+    <div id="headersection">
+        <h1>Online Voting System</h1>
+    </div>
+    <hr>
+
+    <div id="bodysection">
+        <h2>Register</h2>
+        <form action="../API/register.php" method="POST" enctype="multipart/form-data" id="registerForm">
+            <input type="text" name="name" placeholder="Enter Your Name" required>
+            <input type="number" name="mobile" placeholder="Enter Mobile Number" required>
+            <input type="password" name="password" id="password" placeholder="Enter Password" required>
+            <input type="password" name="cpassword" id="cpassword" placeholder="Confirm Password" required>
+            <input type="text" name="address" placeholder="Enter Your Address" required>
+            <div>
+                Upload Photo: <input type="file" name="photo" accept="image/*" required>
+            </div>
+            <br>
+            <div>
+                Select Your Role:
+                <select name="role" required>
+                    <option value="" style="color: #20B2AA; background-color: black;">Select Role</option>
+                    <option value="1" style="color: #20B2AA; background-color: black;">Voter</option>
+                    <option value="2" style="color: #20B2AA; background-color: black;">Group</option>
+                </select>
+            </div>
+            <br>
+            <button type="submit" id="registerButton">Register</button>
+            <br><br>
+            Already registered? <a href="../index.html">Login Here</a>
+        </form>
+    </div>
+</body>
+
+</html>
